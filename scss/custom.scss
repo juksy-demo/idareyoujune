@@ -1,0 +1,168 @@
+body {
+  //若使用 header_02 將背景變成黑色 影片較不會破圖
+  background-color: $black;
+}
+
+.nav_02_line {
+  @include screen(pcSmall) {
+    .number {
+      // 數字顏色
+      color: #66666E;
+    }
+    .listWrap {
+      ul.list {
+        // 調整各個 tooltip 寬度
+        li {
+          a.tooltip {
+            &:before {
+              // Tooltip line
+              background-color: #66666E;
+            }
+            &:after {
+              // Tooltip circle
+              background-color: #66666E;
+            }
+          }
+          &:nth-child(1) {
+            a.tooltip {
+              .tooltiptext {
+                width: 100px;
+              }
+            }
+          }
+          &:nth-child(2) {
+            a.tooltip {
+              .tooltiptext {
+                width: 170px;
+              }
+            }
+          }
+          &:nth-child(3) {
+            a.tooltip {
+              .tooltiptext {
+                width: 150px;
+              }
+            }
+          }
+          &:nth-child(4) {
+            a.tooltip {
+              .tooltiptext {
+                width: 110px;
+              }
+            }
+          }
+        }
+      }
+      .line {
+        // 調整線顏色
+        background-color: rgba(251, 207, 0, 1);
+      }
+    }
+    &.open {
+      .listWrap {
+        ul.list {
+          li {
+            a.tooltip {
+              /* Tooltip line */
+              &:before {
+                background-color: $white;
+              }
+              /* Tooltip circle */
+              &:after {
+                background-color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+a.nav_02_btn {
+  .line {
+    // 選單三條線顏色
+    border-bottom: 3px solid rgba(251, 207, 0, 1);
+  }
+}
+
+.header_03 {
+  .headerWrap {
+    .visualBg {
+      .bannerTitle {
+        // 蓋住不動的標題
+        display: none;
+      }
+      .bannerCover {
+        // 蓋住不動的圖紋
+        display: none;
+      }
+    }
+    .detail {
+      .detailWrap {
+        //描述背景色
+        background-color: rgba(251, 207, 0, 1);
+        .txtInner {
+          .txtWrap {
+            .txtWidth {
+              .txt {
+                color: rgba(0, 0, 0,1);
+              }
+            }
+          }
+          a.link {
+            //馬上閱讀背景色
+            background-color: rgba(0, 0, 0, 0.1);
+            @include screen(pcSmall) {
+              background-color: rgba(0, 0, 0, 0);
+            }
+            // 文字顏色
+            color: $black;
+            &:hover {
+              //馬上閱讀背景色－滑過
+              background-color: rgba(255, 255, 255, 0);
+            }
+            .linkWrap {
+              @include screen(pcSmall) {
+                // 連結框線顏色
+                border: 1px solid $black;
+                box-shadow: 10px 10px 0 $black;
+                transition: .5s;
+                &:hover {
+                  box-shadow: 5px 5px 0 $black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_09 {
+  .layoutWrap {
+    .article {
+      ul.pic {
+        li {
+          a.img {
+            background-position: center -20px;
+          }
+        }
+      }
+      .navWrap {
+        .nav {
+          background-color: rgba(251, 207, 0, 1);
+        }
+      }
+    }
+  }
+}
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+  li .material_btn {
+    //按鈕色
+    background-color: rgba(217, 90, 36, 1);
+  }
+}
