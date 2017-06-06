@@ -7,7 +7,7 @@ body {
   @include screen(pcSmall) {
     .number {
       // 數字顏色
-      color: #66666E;
+      color: rgba(250, 185, 2, 1);
     }
     .listWrap {
       ul.list {
@@ -16,11 +16,11 @@ body {
           a.tooltip {
             &:before {
               // Tooltip line
-              background-color: #66666E;
+              background-color: rgba(250, 185, 2, 1);
             }
             &:after {
               // Tooltip circle
-              background-color: #66666E;
+              background-color: rgba(250, 185, 2, 1);
             }
           }
           &:nth-child(1) {
@@ -55,7 +55,7 @@ body {
       }
       .line {
         // 調整線顏色
-        background-color: rgba(251, 207, 0, 1);
+        background-color: rgba(27, 33, 151, 1);
       }
     }
     &.open {
@@ -82,7 +82,7 @@ body {
 a.nav_02_btn {
   .line {
     // 選單三條線顏色
-    border-bottom: 3px solid rgba(251, 207, 0, 1);
+    border-bottom: 3px solid rgba(250, 185, 2, 1);
   }
 }
 
@@ -101,23 +101,26 @@ a.nav_02_btn {
     .detail {
       .detailWrap {
         //描述背景色
-        background-color: rgba(251, 207, 0, 1);
+        background-color: $black;
+        @include screen(pcSmall) {
+          background-color: rgba(27, 33, 151, 1);
+        }
         .txtInner {
           .txtWrap {
             .txtWidth {
               .txt {
-                color: rgba(0, 0, 0,1);
+                // color: rgba(0, 0, 0,1);
               }
             }
           }
           a.link {
             //馬上閱讀背景色
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(27, 33, 151, 1);
             @include screen(pcSmall) {
               background-color: rgba(0, 0, 0, 0);
             }
             // 文字顏色
-            color: $black;
+            // color: $black;
             &:hover {
               //馬上閱讀背景色－滑過
               background-color: rgba(255, 255, 255, 0);
@@ -125,7 +128,7 @@ a.nav_02_btn {
             .linkWrap {
               @include screen(pcSmall) {
                 // 連結框線顏色
-                border: 1px solid $black;
+                border: 1px solid rgba(250, 185, 2, 1);
                 box-shadow: 10px 10px 0 $black;
                 transition: .5s;
                 &:hover {
@@ -152,7 +155,8 @@ a.nav_02_btn {
       }
       .navWrap {
         .nav {
-          background-color: rgba(251, 207, 0, 1);
+          background-color: rgba(27, 33, 151, 1);
+          color: $white;
         }
       }
     }
@@ -163,6 +167,6 @@ ul.fixedBtn_01,
 .fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
   li .material_btn {
     //按鈕色
-    background-color: rgba(217, 90, 36, 1);
+    background-color: rgba(27, 33, 151, 1);
   }
 }

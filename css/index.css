@@ -4759,11 +4759,11 @@ body {
 
 @media screen and (min-width: 1024px) {
   .nav_02_line .number {
-    color: #66666E; }
+    color: #fab902; }
   .nav_02_line .listWrap ul.list li a.tooltip:before {
-    background-color: #66666E; }
+    background-color: #fab902; }
   .nav_02_line .listWrap ul.list li a.tooltip:after {
-    background-color: #66666E; }
+    background-color: #fab902; }
   .nav_02_line .listWrap ul.list li:nth-child(1) a.tooltip .tooltiptext {
     width: 100px; }
   .nav_02_line .listWrap ul.list li:nth-child(2) a.tooltip .tooltiptext {
@@ -4773,7 +4773,7 @@ body {
   .nav_02_line .listWrap ul.list li:nth-child(4) a.tooltip .tooltiptext {
     width: 110px; }
   .nav_02_line .listWrap .line {
-    background-color: #fbcf00; }
+    background-color: #1b2197; }
   .nav_02_line.open .listWrap ul.list li a.tooltip {
     /* Tooltip line */
     /* Tooltip circle */ }
@@ -4783,7 +4783,7 @@ body {
       background-color: #fff; } }
 
 a.nav_02_btn .line {
-  border-bottom: 3px solid #fbcf00; }
+  border-bottom: 3px solid #fab902; }
 
 .header_03 .headerWrap .visualBg .bannerTitle {
   display: none; }
@@ -4792,12 +4792,12 @@ a.nav_02_btn .line {
   display: none; }
 
 .header_03 .headerWrap .detail .detailWrap {
-  background-color: #fbcf00; }
-  .header_03 .headerWrap .detail .detailWrap .txtInner .txtWrap .txtWidth .txt {
-    color: black; }
+  background-color: #000; }
+  @media screen and (min-width: 1024px) {
+    .header_03 .headerWrap .detail .detailWrap {
+      background-color: #1b2197; } }
   .header_03 .headerWrap .detail .detailWrap .txtInner a.link {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #000; }
+    background-color: #1b2197; }
     @media screen and (min-width: 1024px) {
       .header_03 .headerWrap .detail .detailWrap .txtInner a.link {
         background-color: transparent; } }
@@ -4805,7 +4805,7 @@ a.nav_02_btn .line {
       background-color: rgba(255, 255, 255, 0); }
     @media screen and (min-width: 1024px) {
       .header_03 .headerWrap .detail .detailWrap .txtInner a.link .linkWrap {
-        border: 1px solid #000;
+        border: 1px solid #fab902;
         box-shadow: 10px 10px 0 #000;
         transition: .5s; }
         .header_03 .headerWrap .detail .detailWrap .txtInner a.link .linkWrap:hover {
@@ -4815,8 +4815,9 @@ a.nav_02_btn .line {
   background-position: center -20px; }
 
 .list_09 .layoutWrap .article .navWrap .nav {
-  background-color: #fbcf00; }
+  background-color: #1b2197;
+  color: #fff; }
 
 ul.fixedBtn_01 li .material_btn,
 .fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share li .material_btn {
-  background-color: #d95a24; }
+  background-color: #1b2197; }
